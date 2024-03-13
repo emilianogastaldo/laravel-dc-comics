@@ -20,8 +20,4 @@ Route::get('/', HomeController::class)->name('#');
 // MEMO: Le route delle liste hanno il nome al PLURALE, le route dei singoli prodotti ce l'hanno al SINGOLARE!!!!
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
-Route::get('/comics/{index}', function ($index) {
-    $comics = config('comics');
-    $comic = $comics[$index];
-    return view('comics.show', compact('comic'));
-})->name('comics.show');
+Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');

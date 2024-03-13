@@ -42,23 +42,13 @@
                     <li class="flex">
                         <div>Art by:</div>
                         <div class="list-people">
-                            @foreach ( $comic['artists'] as  $artist)
-                                <a href="#">{{$artist}}</a>, 
-                                @if($loop->last)
-                                    <a href="#">{{$artist}}</a>
-                                @endif
-                            @endforeach
+                           {{$comic['artists']}}
                         </div>
                     </li>
                     <li class="flex">
                         <div>Written by:</div>
                         <div class="list-people">
-                            @foreach ( $comic['writers'] as  $writer)
-                                <a href="#">{{$writer}}</a>, 
-                                @if($loop->last)
-                                    <a href="#">{{$writer}}</a>
-                                @endif
-                            @endforeach
+                            {{$comic['writers']}}
                         </div>
                     </li>
                 </ul>
