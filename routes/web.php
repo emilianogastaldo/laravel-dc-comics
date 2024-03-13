@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ComicController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,17 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('#');
+Route::get('/', HomeController::class)->name('#');
 
 // MEMO: Le route delle liste hanno il nome al PLURALE, le route dei singoli prodotti ce l'hanno al SINGOLARE!!!!
-Route::get('/comics', function () {
-    return view('comics.index');
-})->name('comics');
+Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
 Route::get('/comics/{index}', function ($index) {
     $comics = config('comics');
     $comic = $comics[$index];
     return view('comics.show', compact('comic'));
-})->name('comic');
+})->name('comics.show');
