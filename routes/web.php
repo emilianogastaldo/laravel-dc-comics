@@ -20,6 +20,9 @@ Route::get('/', HomeController::class)->name('#');
 // Route per la lista
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
+// Route POST per caricare il nuovo fumetto
+Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+
 // Route per il form
 Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
 
