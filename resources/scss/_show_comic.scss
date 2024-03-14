@@ -1,8 +1,5 @@
 @use 'vars' as *;
 
-.comic .wrapper {
-    max-width: 1000px;
-}
 
 .comic .cover-section {
     background-color: $primary-color;
@@ -48,7 +45,7 @@
     font-family: $open-sans;
     border-bottom: 1px solid lightgray;
 
-    .wrapper {
+    .wrapper-small {
         display: flex;
         gap: 3rem;
 
@@ -96,10 +93,9 @@
     background-color: $light-gray;
     padding-top: 3rem;
 
-    .wrapper {
+    .wrapper-small {
         display: flex;
         gap: 3rem;
-        padding-bottom: 3rem;
 
         .talent,
         .specs {
@@ -138,11 +134,7 @@
 
     .links {
         border-top: 1px solid lightgray;
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+        margin-top: 3rem;
 
         li {
             flex-basis: calc(100% / 4);
