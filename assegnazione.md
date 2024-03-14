@@ -1,4 +1,4 @@
-Esercizio di oggi: Laravel CRUD - Index & Show
+Esercizio di oggi: Laravel CRUD - Index & Show 13/03/2024
 
 nome repo: laravel-dc-comics occhio! non è la stessa della volta scorsa
 
@@ -20,3 +20,22 @@ Bonus
 Qualunque cosa a piacere delle varie che abbiamo visto
 
 Buon divertimento!
+
+14/03/2024
+Ciao ragazzi,
+
+esercizio di oggi: Laravel CRUD Create & Store
+
+nome repo: laravel-dc-comics  (stessa di ieri)
+
+Proseguiamo con l'esercizio Comics e aggiungiamo la possibilità di aggiungere un fumetto!
+
+Ci servirà una rotta per il form e un'altra per l'effettiva creazione del film nel database!
+
+Aiutatevi con slide e documentazione!
+
+BONUS
+
+provare a implementare una minima validazione come visto stamattina!
+
+Buon lavoro!
