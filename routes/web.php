@@ -17,7 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('#');
 
-// MEMO: Le route delle liste hanno il nome al PLURALE, le route dei singoli prodotti ce l'hanno al SINGOLARE!!!!
+// Route per la lista
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
+// Route per il form
+Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
+
+// Route per l'oggetto singolo
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
