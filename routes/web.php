@@ -24,7 +24,10 @@ Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.c
 // Route per l'oggetto singolo
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 // Route per la modifica
-Route::get('comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.update');
+Route::get('comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');
 
 // Route POST per caricare il nuovo fumetto
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+
+// Route PUT per modificare il comic
+Route::put('/comics/{comic}', [ComicController::class, 'update'])->name('comics.update');

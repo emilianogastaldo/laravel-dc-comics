@@ -2,11 +2,11 @@
 
 @section('main')
 <main>
-    QUESTO è LA MODIFICAAAAAAAA
-    <form action="{{route('comics.store')}}" method="POST">
+    <form action="{{route('comics.update', $comic->id)}}" method="POST">
         @csrf
         @method('PUT')
         <div class="wrapper">
+            <p>MODIFICA QUELLO CHE VUOI</p>
             @if($errors->any())
                 <ul>
                     @foreach ($errors->all() as $error)
