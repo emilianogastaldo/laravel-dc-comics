@@ -51,6 +51,7 @@
                 </div>                
             </div>
             <button type="submit" class="btn btn-more">Invia</button>
+            <a href="{{route('comics.index')}}" class="btn btn-more">Torna indietro</a>
         </div>
     </form>
 </main>
