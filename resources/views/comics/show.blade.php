@@ -10,7 +10,7 @@
                 <p class="cover-label up-right">COMIC BOOK</p>
                 <img src="{{$comic->thumb}}" alt="{{$comic->title}}">        
                 <p class="cover-label bottom">VIEW GALLERY</p>
-                <a href="#" class="btn btn-signup">MODIFICA</a>       
+                <a href="{{route('comics.update', $comic->id)}}" class="btn btn-signup">MODIFICA</a>       
             </figure> 
         </div>
     </section>
