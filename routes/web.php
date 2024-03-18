@@ -31,3 +31,6 @@ Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 
 // Route PUT per modificare il comic
 Route::put('/comics/{comic}', [ComicController::class, 'update'])->name('comics.update');
+
+// Route per cancellare
+Route::delete('/comics/{comic}', [ComicController::class, 'destroy'])->name('comics.destroy');
